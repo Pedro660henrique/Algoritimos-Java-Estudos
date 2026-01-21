@@ -1,5 +1,6 @@
 package EstruturasRepeticao;
 
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -23,14 +24,14 @@ public class Ex_For_While {
 
     public static void Ex3(){
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
-        int n;
-        double soma;
+        double soma = 0;
+        int x;
         do{
             System.out.println("Digite a fila de numeros que você quer somar: ");
-            n = sc.nextInt();
-            soma = n + n;
-            System.out.println("Resultado da fila: " + soma);
-        }while(n != 0);
+            x = sc.nextInt();
+            soma = soma + x;
+        }while(x != 0);
+            System.out.println(soma);
     }
 }
 
