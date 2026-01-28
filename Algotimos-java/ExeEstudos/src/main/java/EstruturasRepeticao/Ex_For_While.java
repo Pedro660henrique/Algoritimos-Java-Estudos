@@ -47,6 +47,21 @@ public class Ex_For_While {
                     System.out.println("Quantidade de pares: " + numerosPares);
             }
     }
+
+    public static void Ex5(){
+        Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+        int numero;
+
+        System.out.println("Digite o numero da tabuada que deseja: ");
+        numero = sc.nextInt();
+
+        int multiplicador = 0;
+        while(multiplicador <= 10){
+            int resultado = numero * multiplicador;
+            System.out.println(resultado);
+            multiplicador++;
+        }
+    }
 }
 
 
