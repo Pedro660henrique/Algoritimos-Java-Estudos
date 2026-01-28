@@ -36,17 +36,16 @@ public class Ex_For_While {
 
     public static void Ex4(){
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
-        int[] numero = new int[10];
+        int numerosPares = 0;
 
-        for(int i = 0; i < numero.length; i++){
-            System.out.println("Digite 10 numeros: ");
-            numero[i] = sc.nextInt();
-                if(i % 2 == 0){
-                    System.out.println("Esses numeros são pares. " + i);
-                }else{
-                    System.out.println("Esses numeros são ímpares. " + i);
+            for (int i = 1; i <= 10; i++) {
+                System.out.println("Digite o " + i + "º numero: ");
+                int numero = sc.nextInt();
+                if (numero % 2 == 0) {
+                    numerosPares++;
                 }
-        }
+                    System.out.println("Quantidade de pares: " + numerosPares);
+            }
     }
 }
 
